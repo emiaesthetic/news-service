@@ -1,0 +1,16 @@
+@import '_normalize.css';
+@import '_fonts.css';
+@import '_variables.css';
+@import '_base.css';
+
+@import 'blocks/_loader.css';
+@import 'blocks/_button.css';
+@import 'blocks/_logo.css';
+@import 'blocks/_header.css';
+@import 'blocks/_form.css';
+@import 'blocks/_select.css';
+@import 'blocks/_title.css';
+@import 'blocks/_news.css';
+@import 'blocks/_card.css';
+@import 'blocks/_footer.css';
+@import 'blocks/_social.css';

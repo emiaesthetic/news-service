@@ -1,0 +1,14 @@
+.title-wrapper {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-gray-alt);
+}
+
+.title {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+
+  color: var(--color-dark);
+}

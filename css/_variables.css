@@ -1,0 +1,21 @@
+:root {
+  --container-width: 1140px;
+  --container-padding-x: 30px;
+
+  --font-family: 'Roboto', sans-serif;
+
+  --border-radius: 22px;
+
+  --input-height: 44px;
+
+  --transition-duration: .2s;
+  --transition-timing-function: linear;
+
+  --background-color-main: #ffffff;
+
+  --color-dark: #212121;
+  --color-light: #ffffff;
+  --color-gray: #8e8e8e;
+  --color-gray-alt: #e6e6e6;
+  --color-accent: #f2994a;
+}

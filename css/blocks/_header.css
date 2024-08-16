@@ -1,0 +1,33 @@
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-gray-alt);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__form {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+  .header__container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .header__form {
+    order: 1;
+  }
+}

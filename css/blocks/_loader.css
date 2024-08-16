@@ -1,0 +1,26 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-accent);
+  background-color: var(--background-color-main);
+}
+
+.active {
+  display: flex;
+}
+
+.loader svg {
+  animation: loader 2s linear infinite reverse .5s;
+}
+
+@keyframes loader {
+  10% {rotate: 36deg;}
+  50% {rotate: 180deg;}
+  100% {rotate: 360deg;}
+}

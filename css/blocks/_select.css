@@ -1,0 +1,47 @@
+.select-wrapper {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+
+  background-color: var(--color-light);
+}
+
+.select-wrapper:after {
+  content: url(/image/arrow.svg);
+  position: absolute;
+  top: 17px;
+  right: 22px;
+}
+
+.select {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: var(--input-height);
+  border: 1px solid var(--color-gray-alt);
+  padding-inline: 20px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 0.8;
+
+  color: var(--color-dark);
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  appearance: none;
+
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select:hover,
+.select:focus-within {
+  border-color: var(--color-accent);
+}

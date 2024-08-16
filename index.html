@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <title>News</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo logo link-reset" href="#">
+        <img src="./image/logo.svg" alt="Logo Only Fresh News" width="76" height="40">
+      </a>
+
+      <form class="header__form form" role="search">
+        <input class="form__input" type="search" name="search" placeholder="Я хочу узнать про...">
+        <button class="form__button button button-reset" type="submit" aria-label="Поиск">
+          <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0996 16.1287L19.785 18.8127C19.9102 18.9424 19.9795 19.1161 19.9779 19.2963C19.9764 19.4766
+            19.9041 19.649 19.7766 19.7765C19.6491 19.904 19.4767 19.9763 19.2964 19.9778C19.1162 19.9794 18.9425
+            19.9101 18.8129 19.7849L16.1275 17.0995C14.3727 18.603 12.1037 19.3683 9.79673 19.235C7.48976 19.1016
+            5.32411 18.0799 3.7542 16.3843C2.1843 14.6886 1.33218 12.4508 1.37666 10.1404C1.42113 7.82998 2.35874
+            5.62661 3.99273 3.99261C5.62673 2.35862 7.8301 1.42101 10.1405 1.37654C12.4509 1.33206 14.6887 2.18418
+            16.3844 3.75408C18.08 5.32399 19.1018 7.48964 19.2351 9.79661C19.3685 12.1036 18.6031 14.3725 17.0996
+            16.1274V16.1287ZM10.3126 17.875C12.3183 17.875 14.2419 17.0782 15.6601 15.66C17.0783 14.2417 17.8751 12.3182
+            17.8751 10.3125C17.8751 8.30679 17.0783 6.38324 15.6601 4.96499C14.2419 3.54675 12.3183 2.74999 10.3126
+            2.74999C8.30691 2.74999 6.38336 3.54675 4.96512 4.96499C3.54687 6.38324 2.75011 8.30679 2.75011
+            10.3125C2.75011 12.3182 3.54687 14.2417 4.96512 15.66C6.38336 17.0782 8.30691 17.875 10.3126 17.875Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </form>
+
+      <div class="select-wrapper">
+        <select class="header__select select" name="country" id="country">
+          <option class="select__value" value="Россия">Россия</option>
+          <option class="select__value" value="Беларусь">Беларусь</option>
+          <option class="select__value" value="Казахстан">Казахстан</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="title-wrapper">
+      <div class="container">
+        <h1 class="title">Свежие новости</h1>
+      </div>
+    </div>
+
+    <section class="news">
+      <div class="container">
+        <h2 class="visually-hidden">Список новостей</h2>
+        <ul class="news__list list-reset">
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__date-time">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="card">
+              <div class="card__image">
+                <img
+                  src="/image/card/news-image.jpg"
+                  alt=""
+                  width="270" height="200" loading="lazy"
+                >
+              </div>
+              <div class="card__content">
+                <h3 class="card__title">
+                  <a class="card__link link-reset" href="#">
+                    В России начали выпускать суверенные печатные платы — в них только отечественное сырьё и материалы
+                  </a>
+                </h3>
+                <p class="card__description">
+                  Холдинг «Российские космические системы», входящий в состав «Роскосмоса»...
+                </p>
+                <div class="card__info">
+                  <span class="card__datetime">
+                    <time datetime="2022-03-16">16/03/2022</time>
+                    <time datetime="11:06">11:06</time>
+                  </span>
+                  <span class="card__author">Эрик Крипке</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a class="footer__logo logo link-reset" href="#">
+          <img src="./image/logo.svg" alt="Logo Only Fresh News" width="76" height="40">
+        </a>
+        <ul class="footer__social social list-reset">
+          <li class="social__item">
+            <a class="social__link link-reset" href="#">
+              <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.7026 2.11415C19.0067 2.42248 18.2592 2.63082 17.4734 2.72498C18.2842 2.23981 18.8908 1.4762
+                19.1801 0.576649C18.4183 1.02914 17.5845 1.34765 16.7151 1.51832C16.1304 0.894037 15.3559 0.480255 14.512
+                0.341211C13.668 0.202168 12.8018 0.345642 12.0477 0.74936C11.2937 1.15308 10.694 1.79445 10.3418
+                2.5739C9.98966 3.35335 9.90466 4.22727 10.1001 5.05998C8.55646 4.98248 7.04641 4.58127 5.6679
+                3.8824C4.2894 3.18353 3.07325 2.20262 2.09838 1.00332C1.76505 1.57832 1.57338 2.24498 1.57338
+                2.95498C1.57301 3.59415 1.73041 4.22352 2.03162 4.78726C2.33282 5.351 2.76852 5.83168 3.30005
+                6.18665C2.68361 6.16703 2.08078 6.00047 1.54172 5.70082V5.75082C1.54166 6.64727 1.85174 7.51613 2.41937
+                8.20998C2.98699 8.90383 3.77719 9.37992 4.65588 9.55748C4.08404 9.71225 3.4845 9.73504 2.90255
+                9.62415C3.15047 10.3955 3.63338 11.07 4.28369 11.5533C4.934 12.0365 5.71915 12.3043 6.52922
+                12.3191C5.15408 13.3987 3.45579 13.9842 1.70755 13.9816C1.39787 13.9817 1.08845 13.9636 0.780884
+                13.9275C2.55545 15.0685 4.62117 15.674 6.73088 15.6716C13.8726 15.6716 17.7767 9.75665 17.7767
+                4.62665C17.7767 4.45998 17.7726 4.29165 17.7651 4.12498C18.5245 3.57579 19.18 2.89573 19.7009
+                2.11665L19.7026 2.11415Z" fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link link-reset" href="#">
+              <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5417 0.956687C19.68 0.501687 19.5417 0.166687 18.8792
+                0.166687H16.6917C16.135 0.166687 15.8783 0.455854 15.7392 0.77502C15.7392 0.77502 14.6267 3.43835 13.0508
+                5.16835C12.5408 5.67002 12.3092 5.82919 12.0308 5.82919C11.8917 5.82919 11.6825 5.67002 11.6825
+                5.21419V0.956687C11.6825 0.41002 11.5292 0.166687 11.0658 0.166687H7.62583C7.27833 0.166687 7.06917
+                0.42002 7.06917 0.660854C7.06917 1.17835 7.8575 1.29835 7.93833 2.75502V5.92002C7.93833 6.61419 7.81083
+                6.74002 7.5325 6.74002C6.79083 6.74002 4.98667 4.06419 3.91583 1.00252C3.70833 0.406687 3.49833 0.166687
+                2.93917 0.166687H0.75C0.125 0.166687 0 0.455854 0 0.77502C0 1.34335 0.741667 4.16669 3.45417
+                7.90085C5.2625 10.4509 7.80833 11.8334 10.1275 11.8334C11.5183 11.8334 11.69 11.5267 11.69
+                10.9975V9.07002C11.69 8.45585 11.8217 8.33335 12.2625 8.33335C12.5875 8.33335 13.1433 8.49335 14.4417
+                9.72252C15.925 11.18 16.1692 11.8334 17.0042 11.8334H19.1917C19.8167 11.8334 20.13 11.5267
+                19.95 10.92C19.7517 10.3167 19.0433 9.44086 18.1042 8.40169C17.5942 7.81002 16.8292 7.17252 16.5967
+                6.85335C16.2725 6.44419 16.365 6.26169 16.5967 5.89752C16.5967 5.89752 19.2633 2.20919 19.5408
+                0.956687H19.5417Z" fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link link-reset" href="#">
+              <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5417 0.956687C19.68 0.501687 19.5417 0.166687 18.8792
+                0.166687H16.6917C16.135 0.166687 15.8783 0.455854 15.7392 0.77502C15.7392 0.77502 14.6267 3.43835 13.0508
+                5.16835C12.5408 5.67002 12.3092 5.82919 12.0308 5.82919C11.8917 5.82919 11.6825 5.67002 11.6825
+                5.21419V0.956687C11.6825 0.41002 11.5292 0.166687 11.0658 0.166687H7.62583C7.27833 0.166687 7.06917
+                0.42002 7.06917 0.660854C7.06917 1.17835 7.8575 1.29835 7.93833 2.75502V5.92002C7.93833 6.61419 7.81083
+                6.74002 7.5325 6.74002C6.79083 6.74002 4.98667 4.06419 3.91583 1.00252C3.70833 0.406687 3.49833 0.166687
+                2.93917 0.166687H0.75C0.125 0.166687 0 0.455854 0 0.77502C0 1.34335 0.741667 4.16669 3.45417
+                7.90085C5.2625 10.4509 7.80833 11.8334 10.1275 11.8334C11.5183 11.8334 11.69 11.5267 11.69
+                10.9975V9.07002C11.69 8.45585 11.8217 8.33335 12.2625 8.33335C12.5875 8.33335 13.1433 8.49335 14.4417
+                9.72252C15.925 11.18 16.1692 11.8334 17.0042 11.8334H19.1917C19.8167 11.8334 20.13 11.5267
+                19.95 10.92C19.7517 10.3167 19.0433 9.44086 18.1042 8.40169C17.5942 7.81002 16.8292 7.17252 16.5967
+                6.85335C16.2725 6.44419 16.365 6.26169 16.5967 5.89752C16.5967 5.89752 19.2633 2.20919 19.5408
+                0.956687H19.5417Z" fill="currentColor" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <span class="footer__copyright">&copy; 2020-2022 News</span>
+    </div>
+  </footer>
+
+  <div class="loader">
+    <svg width="166" height="120" viewBox="0 0 166 120" xmlns="http://www.w3.org/2000/svg">
+      <path d="M135.5 30L105.5 60H128C128 84.825 107.825 105 83 105C75.425 105 68.225 103.125 62 99.75L51.05
+      110.7C60.275 116.55 71.225 120 83 120C116.15 120 143 93.15 143 60H165.5L135.5 30ZM38 60C38 35.175 58.175 15 83
+      15C90.575 15 97.775 16.875 104 20.25L114.95 9.3C105.725 3.45 94.775 0 83 0C49.85 0 23 26.85 23 60H0.5L30.5 90L60.5
+      60H38Z" fill="currentColor" />
+    </svg>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.button-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  color: currentColor;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:focus-within {
+  color: var(--color-accent);
+}

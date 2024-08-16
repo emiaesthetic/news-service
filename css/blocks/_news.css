@@ -1,0 +1,33 @@
+.news {
+  --count: 4;
+  --column-gap: 20px;
+
+  padding: 40px 0 50px;
+  border-bottom: 1px solid var(--color-gray-alt);
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px var(--column-gap);
+}
+
+.news__item {
+  flex-basis: calc((100% - (var(--count) - 1) * var(--column-gap)) / var(--count));
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+  .news {
+    --count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .news {
+    --count: 1;
+  }
+}

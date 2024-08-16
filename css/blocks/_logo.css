@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  width: 80px;
+  height: 44px;
+  border: 1px solid transparent;
+
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.logo:focus {
+  outline: none;
+}
+
+.logo:hover,
+.logo:focus-within {
+  border-color: var(--color-accent);
+}
