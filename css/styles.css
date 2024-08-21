@@ -3,7 +3,7 @@
 @import '_variables.css';
 @import '_base.css';
 
-@import 'blocks/_loader.css';
+@import 'blocks/_preload.css';
 @import 'blocks/_button.css';
 @import 'blocks/_logo.css';
 @import 'blocks/_header.css';

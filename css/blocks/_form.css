@@ -37,6 +37,10 @@
   border-color: var(--color-accent);
 }
 
+.form__input:focus + .form__button {
+  display: none;
+}
+
 .form__button {
   position: absolute;
   top: 12px;
