@@ -1,0 +1,25 @@
+.preload {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-accent);
+  background-color: var(--background-color-main);
+}
+
+.preload svg {
+  animation: preload 2s linear infinite reverse .5s;
+}
+
+@keyframes preload {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
